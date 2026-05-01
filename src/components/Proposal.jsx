@@ -42,7 +42,7 @@ function Proposal({ onResponse, isLoading }) {
           To be Honest, this is the first time I’ve liked someone like this, and it’s you.
 I was a little scared to say it because I didn’t want to spoil what we have.
 I’m not very good at flirting, and if I ever irritated you, I’m sorry.
-But I really feel like we connect well—like frontend and backend.
+You’re a frontend developer and I’m a backend developer—I feel like we’re a perfect match.
 I’ve started liking you, and I’d like to talk more and see where this goes.
 If you feel the same, we can take it forward—no pressure.
           </p>
