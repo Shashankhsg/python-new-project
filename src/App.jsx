@@ -13,7 +13,7 @@ function App() {
   const handleBirthdayResponse = async (hasBoyfriend) => {
     setIsLoading(true)
     try {
-      const response = await axios.post(`${API_URL}/has-boyfriend`, {
+      const response = await axios.post(`${API_URL}/api/has-boyfriend`, {
         has_boyfriend: hasBoyfriend
       })
       
@@ -25,8 +25,8 @@ function App() {
         setCurrentPage('proposal')
       }
     } catch (error) {
-      console.error('Error:', error)
-      alert('Error processing response')
+      console.error('Error:', error.response?.data || error.message)
+      alert('Error: ' + (error.response?.data?.detail || error.message))
     } finally {
       setIsLoading(false)
     }
@@ -35,7 +35,7 @@ function App() {
   const handleProposalResponse = async (accepted) => {
     setIsLoading(true)
     try {
-      const response = await axios.post(`${API_URL}/proposal-response`, {
+      const response = await axios.post(`${API_URL}/api/proposal-response`, {
         proposal_response: accepted
       })
       
@@ -44,8 +44,8 @@ function App() {
         setCurrentPage('success')
       }
     } catch (error) {
-      console.error('Error:', error)
-      alert('Error processing response')
+      console.error('Error:', error.response?.data || error.message)
+      alert('Error: ' + (error.response?.data?.detail || error.message))
     } finally {
       setIsLoading(false)
     }
