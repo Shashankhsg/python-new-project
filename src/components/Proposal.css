@@ -169,7 +169,7 @@
   width: 180px;
   height: 180px;
   transform: translate(-50%, -50%);
-  animation: orbit-warning 1.2s linear infinite;
+  animation: orbit-warning 3.6s linear infinite;
   pointer-events: none;
 }
 
