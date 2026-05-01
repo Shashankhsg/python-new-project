@@ -65,8 +65,8 @@ function App() {
       {currentPage === 'success' && (
         <div className="success-page">
           <h1>💕 Congratulations! 💕</h1>
-          <p>She said YES!</p>
-          <p className="message">You have successfully proposed!</p>
+          <p>You said YES!</p>
+          <p className="message">You have successfully approved the proposal!</p>
         </div>
       )}
     </div>
