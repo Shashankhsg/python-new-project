@@ -39,7 +39,7 @@ function Proposal({ onResponse, isLoading }) {
       </div>
 
       <div className="proposal-content">
-        <h1>I think we have a really good connection!!</h1>
+        <h1>I think we can build a good connection!!</h1>
         
         <div className="proposal-message">
           <p>
