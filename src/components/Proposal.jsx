@@ -4,6 +4,7 @@ import './Proposal.css'
 function Proposal({ onResponse, isLoading }) {
   const [noButtonPosition, setNoButtonPosition] = useState({ top: 0, left: 0 })
   const [hoveredNo, setHoveredNo] = useState(false)
+  const [showNoWarning, setShowNoWarning] = useState(false)
 
   const moveNoButton = () => {
     const randomTop = Math.floor(Math.random() * (window.innerHeight - 100))
@@ -14,6 +15,7 @@ function Proposal({ onResponse, isLoading }) {
   const handleNoMouseEnter = () => {
     moveNoButton()
     setHoveredNo(true)
+    setShowNoWarning(true)
   }
 
   const handleNoMouseLeave = () => {
@@ -23,6 +25,8 @@ function Proposal({ onResponse, isLoading }) {
   const handleNoClick = (e) => {
     e.preventDefault()
     moveNoButton()
+    setHoveredNo(true)
+    setShowNoWarning(true)
   }
 
   return (
@@ -77,6 +81,9 @@ If you feel the same, we can take it forward—no pressure.
             </button>
           </div>
         </div>
+        {showNoWarning && (
+          <p className="no-warning">please dont do this</p>
+        )}
       </div>
 
       <div className="hearts-bottom">
