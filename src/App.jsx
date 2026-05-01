@@ -4,7 +4,10 @@ import BirthdayQuestion from './components/BirthdayQuestion'
 import Proposal from './components/Proposal'
 import './App.css'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = (
+  import.meta.env.VITE_API_URL ||
+  'https://py-app-1059719843200.us-central1.run.app'
+).replace(/\/$/, '')
 
 function App() {
   const [currentPage, setCurrentPage] = useState('question')
