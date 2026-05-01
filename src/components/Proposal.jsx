@@ -79,11 +79,13 @@ If you feel the same, we can take it forward—no pressure.
             >
               No
             </button>
+            {showNoWarning && (
+              <div className="no-warning-orbit">
+                <span className="no-warning">please dont do this</span>
+              </div>
+            )}
           </div>
         </div>
-        {showNoWarning && (
-          <p className="no-warning">please dont do this</p>
-        )}
       </div>
 
       <div className="hearts-bottom">

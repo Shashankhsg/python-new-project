@@ -162,12 +162,37 @@
   }
 }
 
+.no-warning-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  animation: orbit-warning 1.2s linear infinite;
+  pointer-events: none;
+}
+
 .no-warning {
-  margin-top: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
   font-size: 0.9rem;
   color: #f5576c;
   font-weight: 600;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) translateY(-92px);
   animation: fade-in 0.2s ease;
+}
+
+@keyframes orbit-warning {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 @keyframes fade-in {
