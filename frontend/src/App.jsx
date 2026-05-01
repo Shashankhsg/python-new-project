@@ -4,6 +4,8 @@ import BirthdayQuestion from './components/BirthdayQuestion'
 import Proposal from './components/Proposal'
 import './App.css'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+
 function App() {
   const [currentPage, setCurrentPage] = useState('question')
   const [isLoading, setIsLoading] = useState(false)
@@ -11,7 +13,7 @@ function App() {
   const handleBirthdayResponse = async (hasBoyfriend) => {
     setIsLoading(true)
     try {
-      const response = await axios.post('http://localhost:8000/api/has-boyfriend', {
+      const response = await axios.post(`${API_URL}/has-boyfriend`, {
         has_boyfriend: hasBoyfriend
       })
       
@@ -33,7 +35,7 @@ function App() {
   const handleProposalResponse = async (accepted) => {
     setIsLoading(true)
     try {
-      const response = await axios.post('http://localhost:8000/api/proposal-response', {
+      const response = await axios.post(`${API_URL}/proposal-response`, {
         proposal_response: accepted
       })
       
