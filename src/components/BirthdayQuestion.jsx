@@ -4,11 +4,6 @@ import './BirthdayQuestion.css'
 function BirthdayQuestion({ onResponse, isLoading }) {
   return (
     <div className="question-container">
-      <div className="hearts">
-        <span className="heart">💕</span>
-        <span className="heart">💖</span>
-        <span className="heart">💗</span>
-      </div>
       
       <h1>Do you have any boyfriend?</h1>
       <p className="subtitle">Please be honest...</p>

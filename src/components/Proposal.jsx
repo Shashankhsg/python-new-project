@@ -35,13 +35,16 @@ function Proposal({ onResponse, isLoading }) {
       </div>
 
       <div className="proposal-content">
-        <h1>💕 Will you be my girlfriend? 💕</h1>
+        <h1>I think we have a really good connection!!</h1>
         
         <div className="proposal-message">
           <p>
-            You are the most amazing person I've ever met. Your smile brightens my day, 
-            and I can't stop thinking about you. I would be the happiest person if you 
-            would say yes and let me be a part of your life.
+          To be Honest, this is the first time I’ve liked someone like this, and it’s you.
+I was a little scared to say it because I didn’t want to spoil what we have.
+I’m not very good at flirting, and if I ever irritated you, I’m sorry.
+But I really feel like we connect well—like frontend and backend.
+I’ve started liking you, and I’d like to talk more and see where this goes.
+If you feel the same, we can take it forward—no pressure.
           </p>
           <p className="heart-message">❤️</p>
         </div>
